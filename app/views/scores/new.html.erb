@@ -1,0 +1,8 @@
+
+<%= form_tag('/scores', method: :post) do %>
+<p>Home Team: <input type="text" name="home_team">
+<p>Home Team Score: <input type="text" name="home_team_score"></p>
+<p>Away Team: <input type="text" name="away_team"></p>
+<p>Away Team Score: <input type="text" name="away_team_score"></p>
+<button type="submit">Add Score</button>
+<% end %>

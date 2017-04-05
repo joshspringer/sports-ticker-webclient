@@ -1,0 +1,11 @@
+<%= form_tag("/scores/#{@score.id}", method: :patch) do %>
+<p>Home Team: <input type="text" name="home_team" value="<%= @score.home_team %>"></p>
+<p>Home Team Score: <input type="text" name="home_team_score" value="<%= @score.home_team_score %>"></p>
+<p>Away Team: <input type="text" name="away_team" value="<%= @score.away_team %>"></p>
+<p>Away Team Score: <input type="text" name="away_team_score" value="<%= @score.away_team_score %>"></p>
+<button type="submit">Edit Score</button>
+<% end %>
+
+<%= form_tag("/scores/#{@score.id}", method: :delete) do %>
+<button type="submit">Delete Score</button>
+<% end %>
